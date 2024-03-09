@@ -41,13 +41,14 @@
 		<dependency>
 			<groupId>com.google.protobuf</groupId>
 			<artifactId>protobuf-java</artifactId>
-			<version>3.25.2</version>
+			<version>3.25.3</version>
 		</dependency>
-		<!--		<dependency>
-			<groupId>com-bank-core-payments</groupId>
-			<artifactId>com-bank-core-payments-iso</artifactId>
-			<version>1.0.0</version>
-		</dependency>-->
+
+		<dependency>
+			<groupId>com.google.protobuf</groupId>
+			<artifactId>protobuf-java-util</artifactId>
+			<version>4.26.0-RC3</version>
+		</dependency>
 	</dependencies>
 
 	<build>
