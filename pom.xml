@@ -10,7 +10,7 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com-bank-core-payments</groupId>
-	<artifactId>com-bank-core-payments-iso-pain8</artifactId>
+	<artifactId>com-bank-core-payments-iso-pain-008-001-10</artifactId>
 	<version>1.0.0</version>
 	<name>com-bank-core-payments-iso-pain8</name>
 	<description>Demo project for Spring Boot</description>
@@ -48,6 +48,18 @@
 			<groupId>com.google.protobuf</groupId>
 			<artifactId>protobuf-java-util</artifactId>
 			<version>4.26.0-RC3</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>com-bank-core-payments</groupId>
+			<artifactId>com-bank-core-payments-iso</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>log4j-over-slf4j</artifactId>
 		</dependency>
 	</dependencies>
 
