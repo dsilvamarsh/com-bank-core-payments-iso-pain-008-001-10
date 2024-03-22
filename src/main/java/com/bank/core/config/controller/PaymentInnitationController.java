@@ -15,11 +15,11 @@ public class PaymentInnitationController {
 
 	
 	@PostMapping(value = {"/payment"})
-	public ResponseEntity<String> innitatePayment(@RequestBody Document payment){
+	public ResponseEntity<Document> innitatePayment(@RequestBody Document payment){
 		
 			log.debug("Payment recived "+payment.toString());
 		
-		return ResponseEntity.ok("Payment created").status(200).build();
+		return ResponseEntity.ok(payment).status(200).build();
 	}
 	
 
