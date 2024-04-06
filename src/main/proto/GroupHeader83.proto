@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package com.bank.core.proto.pain_008_001_10;
+ 
+import "google/protobuf/timestamp.proto";
+
+
+ message GroupHeader83{
+    string MsgId = 1;
+    google.protobuf.Timestamp CreDtTm = 2;
+    //repeated Authorisation1Choice Authstn = 3;
+    string NbOfTxs = 4;
+    int32 CtrlSum = 5;
+    //PartyIdentification135 InitgPty = 6;
+    //BranchAndFinancialInstitutionIdentification6  FwdgAgt = 7 ;
+ }

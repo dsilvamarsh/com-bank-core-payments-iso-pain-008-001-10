@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package com.bank.core.proto.pain_008_001_10;
+import "GenericOrganisationIdentification1.proto";
+message OrganisationIdentification29{
+    string AnyBIC =1;
+    string LEI =2;
+    repeated GenericOrganisationIdentification1 Othr =3;
+}

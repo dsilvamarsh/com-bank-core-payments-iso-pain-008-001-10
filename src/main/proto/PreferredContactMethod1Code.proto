@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package com.bank.core.proto.pain_008_001_10;
+
+enum PreferredContactMethod1Code{
+    LFTT=0;
+    MAIL=1;
+    PHON=2;
+    FAXX=3;
+    CELL=4;
+}
+   

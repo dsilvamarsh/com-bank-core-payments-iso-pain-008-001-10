@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package com.bank.core.proto.pain_008_001_10;
+import "Priority2Code.proto";
+import "LocalInstrument2Choice.proto";
+import "ServiceLevel8Choice.proto";
+import "SequenceType3Code.proto";
+import "CategoryPurpose1Choice.proto";
+
+message PaymentTypeInformation29{
+
+    Priority2Code InstrPrty = 1;
+    repeated ServiceLevel8Choice SvcLvl = 2;
+    LocalInstrument2Choice LclInstrm =3;
+    SequenceType3Code SeqTp = 4;
+    CategoryPurpose1Choice CtgyPurp = 5;
+}

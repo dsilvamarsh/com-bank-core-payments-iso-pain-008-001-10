@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+import "AdviceType1Choice.proto";
+package com.bank.core.proto.pain_008_001_10;
+message AdviceType1{
+    AdviceType1Choice CdtAdvc = 1;
+    AdviceType1Choice DbtAdvc = 2;
+}

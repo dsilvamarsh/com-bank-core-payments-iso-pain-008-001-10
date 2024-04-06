@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package com.bank.core.proto.pain_008_001_10;
+message RegulatoryReporting3{
+    //optional RegulatoryReportingType1Code DbtCdtRptgInd
+    //optional RegulatoryAuthority2 Authrty
+    //repeated StructuredRegulatoryReporting3 Dtls
+}
+

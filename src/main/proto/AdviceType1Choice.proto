@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+
+package com.bank.core.proto.pain_008_001_10;
+message AdviceType1Choice{
+    AdviceType1Code Cd =1;
+    string Prtry = 2;
+}
+enum AdviceType1Code{
+    ADWD=0;
+    ADND=1;
+}

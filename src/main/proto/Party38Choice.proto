@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package com.bank.core.proto.pain_008_001_10;
+import "OrganisationIdentification29.proto";
+import "PersonIdentification13.proto";
+message Party38Choice{
+    OrganisationIdentification29 OrgId =1;
+    PersonIdentification13 PrvtId=2;
+}

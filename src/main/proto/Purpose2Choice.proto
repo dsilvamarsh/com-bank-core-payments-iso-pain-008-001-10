@@ -1,0 +1,9 @@
+
+syntax = "proto3";
+
+package com.bank.core.proto.pain_008_001_10;
+message Purpose2Choice{
+    string Cd =1;
+    string Prtry=2;
+}
+

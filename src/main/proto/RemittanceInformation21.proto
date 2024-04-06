@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package com.bank.core.proto.pain_008_001_10;
+message RemittanceInformation21{
+    optional string Ustrd=1;
+    //repeated StructuredRemittanceInformation17 Strd;
+    
+}
+
+

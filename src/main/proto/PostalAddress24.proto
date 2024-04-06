@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package com.bank.core.proto.pain_008_001_10;
+import "AddressType3Choice.proto";
+message PostalAddress24{
+    AddressType3Choice AdrTp = 1;
+    string Dept = 2;
+    string SubDept = 3;
+    string StrtNm = 4;
+    string BldgNb = 5;
+    string BldgNm = 6;
+    string Flr = 7;
+    string PstBx =8;
+    string Room =9;
+    string PstCd =10;
+    string TwnNm =11;
+    string TwnLctnNm = 12;
+    string DstrctNm =13;
+    string CtrySubDvsn =14;
+    string Ctry = 15;
+    string AdrLine =16;
+}

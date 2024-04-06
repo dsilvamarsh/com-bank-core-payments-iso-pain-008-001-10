@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package com.bank.core.proto.pain_008_001_10;
+import "PostalAddress24.proto";
+import "Party38Choice.proto";
+import "Contact4.proto";
+message PartyIdentification135{
+    string Nm = 1;
+    optional PostalAddress24 PstlAdr = 2;
+    optional Party38Choice Id = 3;
+    optional string CtryOfRes = 4;
+    optional Contact4  CtctDtls = 5;
+}

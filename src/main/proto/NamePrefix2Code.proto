@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package com.bank.core.proto.pain_008_001_10;
+
+enum NamePrefix2Code{
+    DOCT=0;
+    MADM=1;
+    MISS=2;
+    MIST=3;
+    MIKS=4;
+}

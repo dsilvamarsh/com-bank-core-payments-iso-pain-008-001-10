@@ -1,0 +1,11 @@
+syntax ="proto3";
+package com.bank.core.proto.pain_008_001_10;
+import "GroupHeader83.proto";
+import "PaymentInstruction39.proto";
+import "SupplementaryData1.proto";
+
+message CustomerDirectDebitInitiationV10{
+    GroupHeader83 GrpHdr=1;
+    repeated PaymentInstruction39 PmtInf=2;
+    repeated SupplementaryData1 SplmtryData=3;
+ }

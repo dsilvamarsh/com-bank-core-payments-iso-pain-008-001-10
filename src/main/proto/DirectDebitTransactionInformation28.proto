@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+package com.bank.core.proto.pain_008_001_10;
+import "PaymentIdentification6.proto";
+import "PaymentTypeInformation29.proto";
+import "ActiveOrHistoricCurrencyAndAmount.proto";
+import "ChargeBearerType1Code.proto";
+import "DirectDebitTransaction11.proto";
+import "PartyIdentification135.proto";
+import "BranchAndFinancialInstitutionIdentification6.proto";
+import "CashAccount40.proto";
+import "Purpose2Choice.proto";
+import "RegulatoryReporting3.proto";
+import "TaxInformation10.proto";
+import "RemittanceLocation7.proto";
+import "RemittanceInformation21.proto";
+import "SupplementaryData1.proto";
+
+message DirectDebitTransactionInformation28{
+
+    optional PaymentIdentification6 PmtId=1;
+    optional PaymentTypeInformation29 PmtTpInf=2;
+    optional ActiveOrHistoricCurrencyAndAmount InstdAmt=3;
+    optional ChargeBearerType1Code ChrgBr=4;
+    optional DirectDebitTransaction11 DrctDbtTx=5;
+    optional PartyIdentification135 UltmtCdtr=6;
+    optional BranchAndFinancialInstitutionIdentification6 DbtrAgt=7;
+    optional CashAccount40 DbtrAgtAcct=8;
+    optional PartyIdentification135 Dbtr=9;
+    optional CashAccount40 DbtrAcct=10;
+    optional PartyIdentification135 UltmtDbtr=11;
+    string InstrForCdtrAgt=12;
+    optional Purpose2Choice Purp=13;
+    repeated RegulatoryReporting3 RgltryRptg=14;
+    optional TaxInformation10 Tax=15;
+    repeated RemittanceLocation7 RltdRmtInf=16;
+    optional RemittanceInformation21 RmtInf=17;
+    repeated SupplementaryData1 SplmtryData=18;
+}

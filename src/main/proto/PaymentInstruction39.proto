@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+package com.bank.core.proto.pain_008_001_10;
+import "PaymentMethod2Code.proto";
+import "PaymentTypeInformation29.proto";
+import "PartyIdentification135.proto";
+import "CashAccount40.proto";
+import "BranchAndFinancialInstitutionIdentification6.proto";
+import "ChargeBearerType1Code.proto";
+import "DirectDebitTransactionInformation28.proto";
+
+import "google/protobuf/timestamp.proto";
+
+
+message PaymentInstruction39{
+    string PmtInfId = 1;
+    PaymentMethod2Code PmtMtd = 2;
+    //AdviceType1 ReqdAdvcTp = 3;
+    bool BtchBookg = 4;
+    int32 NbOfTxs = 5;
+    double CtrlSum = 6;
+    PaymentTypeInformation29 PmtTpInf = 7; 
+    google.protobuf.Timestamp ReqdColltnDt = 8;
+
+    PartyIdentification135 Cdtr = 9;
+    CashAccount40 CdtrAcct = 10;
+    BranchAndFinancialInstitutionIdentification6 CdtrAgt = 11;
+    CashAccount40 CdtrAgtAcct = 12;
+    PartyIdentification135 UltmtCdtr = 13;
+    ChargeBearerType1Code ChrgBr =14;
+    CashAccount40 ChrgsAcct = 15;
+    BranchAndFinancialInstitutionIdentification6 ChrgsAcctAgt = 16 ;
+    PartyIdentification135 CdtrSchmeId = 17;
+    repeated DirectDebitTransactionInformation28 DrctDbtTxInf =18;
+
+
+
+ }

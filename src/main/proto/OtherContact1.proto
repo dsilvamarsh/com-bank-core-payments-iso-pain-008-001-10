@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package com.bank.core.proto.pain_008_001_10;
+
+message OtherContact1{
+    string ChanlTp=1;
+    optional string Id=2;
+}

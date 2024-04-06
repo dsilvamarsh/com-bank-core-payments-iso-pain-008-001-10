@@ -1,0 +1,12 @@
+syntax="proto3";
+package com.bank.core.proto.pain_008_001_10;
+
+
+enum AddressType2Code{
+    ADDR=0;
+    PBOX=1;
+    HOME=2;
+    BIZZ=3;
+    MLTO=4;
+    DLVY=5;
+}

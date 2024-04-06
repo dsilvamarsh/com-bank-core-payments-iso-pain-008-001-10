@@ -1,0 +1,9 @@
+syntax = "proto3";
+package com.bank.core.proto.pain_008_001_10;
+
+enum ChargeBearerType1Code{
+	ChargeBearerType1Code_CRED = 0;
+	ChargeBearerType1Code_DEBT = 1;
+	ChargeBearerType1Code_SHAR = 2;
+	ChargeBearerType1Code_SLEV = 3;
+}

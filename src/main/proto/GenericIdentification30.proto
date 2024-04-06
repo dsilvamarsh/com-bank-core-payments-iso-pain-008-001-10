@@ -1,0 +1,9 @@
+syntax="proto3";
+package com.bank.core.proto.pain_008_001_10;
+
+
+message GenericIdentification30{
+    string Id=1;
+    string Issr=2;
+    optional string SchmeNm=3;
+}

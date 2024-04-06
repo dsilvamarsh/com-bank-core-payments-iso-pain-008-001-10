@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+package com.bank.core.proto.pain_008_001_10;
+enum PaymentMethod2Code{
+    PaymentMethod2Code_DD=0;
+}

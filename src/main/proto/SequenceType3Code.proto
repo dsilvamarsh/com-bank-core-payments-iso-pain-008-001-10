@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package com.bank.core.proto.pain_008_001_10;
+enum SequenceType3Code{
+		SequenceType3Code_FNAL = 0;
+		SequenceType3Code_FRST = 1;
+		SequenceType3Code_OOFF = 2;
+		SequenceType3Code_RCUR = 3;
+		SequenceType3Code_RPRE = 4;
+}

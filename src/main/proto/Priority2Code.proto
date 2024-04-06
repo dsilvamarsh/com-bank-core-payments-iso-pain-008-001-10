@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+package com.bank.core.proto.pain_008_001_10;
+    enum Priority2Code{
+        Priority2Code_HIGH=0;
+        Priority2Code_NORM=1;
+    }

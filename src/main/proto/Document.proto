@@ -1,0 +1,13 @@
+syntax = "proto3";
+package com.bank.core.proto.pain_008_001_10;
+
+import "CustomerDirectDebitInitiationV10.proto";
+message Document{
+    CustomerDirectDebitInitiationV10 cstmrDrctDbtInitn=1;
+}
+
+
+service PaymentService{
+    rpc createPayment(Document) returns (Document){}
+}
+
