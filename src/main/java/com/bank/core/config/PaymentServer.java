@@ -15,29 +15,24 @@ public class PaymentServer {
 	int port = 8080;
 
 	private void start() throws IOException {
-		log.debug("Nettey Server starting to service Payments ");
-		server = Grpc.newServerBuilderForPort(port, InsecureServerCredentials.create())
-				.addService(new PaymentServerImpl())
-
-				.build().start();
-
-		log.debug("Server Started on port : " + port);
-		Runtime.getRuntime().addShutdownHook(new Thread() {
-			@Override
-			public void run() {
-				System.err.println("*** shutting down gRPC server since JVM is shutting down");
-				log.debug("*** shutting down gRPC server since JVM is shutting down");
-				try {
-					PaymentServer.this.stop();
-				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-				System.err.println("*** server shut down");
-			}
-		});
-
-	}
+		/*
+		 * log.debug("Nettey Server starting to service Payments "); server =
+		 * Grpc.newServerBuilderForPort(port, InsecureServerCredentials.create())
+		 * .addService(new PaymentServerImpl())
+		 * 
+		 * .build().start();
+		 * 
+		 * log.debug("Server Started on port : " + port);
+		 * Runtime.getRuntime().addShutdownHook(new Thread() {
+		 * 
+		 * @Override public void run() {
+		 * System.err.println("*** shutting down gRPC server since JVM is shutting down"
+		 * ); log.debug("*** shutting down gRPC server since JVM is shutting down"); try
+		 * { PaymentServer.this.stop(); } catch (InterruptedException e) { // TODO
+		 * Auto-generated catch block e.printStackTrace(); }
+		 * System.err.println("*** server shut down"); } });
+		 * 
+		 */}
 
 	/**
 	 * @author dsilvamarsh

@@ -93,7 +93,7 @@
 			<artifactId>ignite-spring-boot-thin-client-autoconfigure-ext</artifactId>
 			<version>1.0.0</version>
 		</dependency>
-			<dependency>
+		<dependency>
 			<groupId>org.apache.ignite</groupId>
 			<artifactId>ignite-kubernetes</artifactId>
 			<version>2.16.0</version>
@@ -154,9 +154,18 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
-					<mainClass>com.bank.core.config.PaymentServer</mainClass>
+					<mainClass>com.bank.core.config.Application</mainClass>
+					<layout>JAR</layout>
 				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>repackage</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
+
 		</plugins>
 	</build>
 </project>
